@@ -9,11 +9,11 @@ In this paper, we propose Neural Honeytrace, a robust plug-and-play watermarking
 
 ## Acknowledgement
 
-The implementation is based on (ModelGuard)[https://github.com/Yoruko-Tang/ModelGuard.git], we thank the authors for their high quality implementation.
+The implementation is based on [ModelGuard](https://github.com/Yoruko-Tang/ModelGuard.git), we thank the authors for their high quality implementation.
 
 ## Environment and Dataset
 
-Please refer to (ModelGuard)[https://github.com/Yoruko-Tang/ModelGuard.git] for environment and dataset preperation.
+Please refer to [ModelGuard](https://github.com/Yoruko-Tang/ModelGuard.git) for environment and dataset preperation.
 
 We will use 8 datasets in total in our experiments. Three datasets (CIFAR100, CIFAR10, SVHN) can be automatically downloaded when executing scripts. However, you still need to download **all** the following datasets into ```./data/``` (create it if it does not exist) and unzip them before running any codes. (You can change the default dataset path by changing the ```root``` parameter in the dataset files such as ```./defenses/datasets/caltech256.py```.)
 
