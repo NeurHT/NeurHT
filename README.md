@@ -6,7 +6,7 @@ This is an official implementation of the paper *Neural Honeytrace: A Robust Plu
 
 In this paper, we propose Neural Honeytrace, a robust plug-and-play watermarking framework against model extraction attacks. We first formulate a watermark transmission model from an information-theoretic perspective, providing an interpretable account of the principles and limitations of existing triggerable watermarking. Guided by the model, we further introduce: (1) a similarity-based training-free watermarking method for plug-and-play and flexible watermarking, and (2) a distribution-based multi-step watermark information transmission strategy for robust watermarking. Comprehensive experiments on four datasets demonstrate that Neural Honeytrace outperforms previous methods in efficiency and resisting adaptive attacks. Neural Honeytrace reduces the average number of samples required for a worst-case t-Test-based copyright claim from $12,000$ to $200$ with zero training cost.
 
-![Overview of Neural Honeytrace.](https://github.com/NeurHT/NeurHT/blob/main/Fig_3.pdf)
+![Overview of Neural Honeytrace.](https://github.com/NeurHT/NeurHT/blob/main/Fig_3.png)
 
 ## Acknowledgement
 
