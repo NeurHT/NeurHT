@@ -6,21 +6,15 @@ This is an official implementation of the paper *Neural Honeytrace: A Robust Plu
 
 In this paper, we propose Neural Honeytrace, a robust plug-and-play watermarking framework against model extraction attacks. We first formulate a watermark transmission model from an information-theoretic perspective, providing an interpretable account of the principles and limitations of existing triggerable watermarking. Guided by the model, we further introduce: (1) a similarity-based training-free watermarking method for plug-and-play and flexible watermarking, and (2) a distribution-based multi-step watermark information transmission strategy for robust watermarking. Comprehensive experiments on four datasets demonstrate that Neural Honeytrace outperforms previous methods in efficiency and resisting adaptive attacks. Neural Honeytrace reduces the average number of samples required for a worst-case t-Test-based copyright claim from $12,000$ to $200$ with zero training cost.
 
-## Environment
-Python=3.8, PyTorch=1.7.1, CUDA >= 10.2
 
-Python=3.9.5, PyTorch=2.0.1+cu117, CUDA=12.0
+## Acknowledgement
 
-You can run the following commands to create a new environments for running the codes with Anaconda:
-```shell
-conda env create -f environment.yml
-conda activate neurht
-```
+The implementation is based on (ModelGuard)[https://github.com/Yoruko-Tang/ModelGuard.git], we thank the authors for their high quality implementation.
 
-**Notice:** Different GPUs may require different versions of PyTorch. Please follow the instructions on the [official website of PyTorch](https://pytorch.org/get-started/locally/) if there is any problem with installing PyTorch. 
+## Environment and Dataset
 
+Please refer to (ModelGuard)[https://github.com/Yoruko-Tang/ModelGuard.git] for environment and dataset preperation.
 
-## Dataset Preparing
 We will use 8 datasets in total in our experiments. Three datasets (CIFAR100, CIFAR10, SVHN) can be automatically downloaded when executing scripts. However, you still need to download **all** the following datasets into ```./data/``` (create it if it does not exist) and unzip them before running any codes. (You can change the default dataset path by changing the ```root``` parameter in the dataset files such as ```./defenses/datasets/caltech256.py```.)
 
 1. [Caltech256](https://data.caltech.edu/records/nyy15-4j048)
@@ -33,6 +27,13 @@ For Caltech256, CUB200, TinyImageNedt200, Indoor67 and ImageNet1k, you can also 
 ```shell
 sh dataset.sh
 ```
+You can run the following commands to create a new environments for running the codes with Anaconda:
+```shell
+conda env create -f environment.yml
+conda activate neurht
+```
+**Notice:** Different GPUs may require different versions of PyTorch. Please follow the instructions on the [official website of PyTorch](https://pytorch.org/get-started/locally/) if there is any problem with installing PyTorch. For us, Python=3.9.5, PyTorch=2.0.1+cu117, CUDA=12.0 works fine with RTX 4090 GPUs.
+
 
 ## Instructions to Run the Codes
 
