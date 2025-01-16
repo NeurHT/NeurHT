@@ -9,13 +9,13 @@ In this paper, we propose Neural Honeytrace, a robust plug-and-play watermarking
 
 ## Acknowledgement
 
-The implementation is based on [ModelGuard](https://github.com/Yoruko-Tang/ModelGuard.git), we thank the authors for their high quality implementation.
+The implementation is based on [ModelGuard](https://github.com/Yoruko-Tang/ModelGuard.git), we thank the authors for the high quality of their code.
 
 ## Environment and Dataset
 
 Please refer to [ModelGuard](https://github.com/Yoruko-Tang/ModelGuard.git) for environment and dataset preperation.
 
-We will use 8 datasets in total in our experiments. Three datasets (CIFAR100, CIFAR10, SVHN) can be automatically downloaded when executing scripts. However, you still need to download **all** the following datasets into ```./data/``` (create it if it does not exist) and unzip them before running any codes. (You can change the default dataset path by changing the ```root``` parameter in the dataset files such as ```./defenses/datasets/caltech256.py```.)
+We will use the following datasets in total in our experiments. Three datasets (CIFAR100, CIFAR10, SVHN) can be automatically downloaded when executing scripts. However, you still need to download **all** the following datasets into ```./data/``` (create it if it does not exist) and unzip them before running any codes. (You can change the default dataset path by changing the ```root``` parameter in the dataset files such as ```./defenses/datasets/caltech256.py```.)
 
 1. [Caltech256](https://data.caltech.edu/records/nyy15-4j048)
 2. [CUB200](https://data.caltech.edu/records/65de6-vp158)
@@ -32,7 +32,7 @@ You can run the following commands to create a new environments for running the 
 conda env create -f environment.yml
 conda activate neurht
 ```
-**Notice:** Different GPUs may require different versions of PyTorch. Please follow the instructions on the [official website of PyTorch](https://pytorch.org/get-started/locally/) if there is any problem with installing PyTorch. For us, Python=3.9.5, PyTorch=2.0.1+cu117, CUDA=12.0 works fine with RTX 4090 GPUs.
+**Notice:** Different GPUs may require different versions of PyTorch. Please follow the instructions on the [official website of PyTorch](https://pytorch.org/get-started/locally/) if there is any problem with installing PyTorch. For us, Python=3.9.5, PyTorch=2.0.1+cu117, and CUDA=12.0 worked well with NVIDIA RTX 4090 GPUs.
 
 
 ## Instructions to Run the Codes
